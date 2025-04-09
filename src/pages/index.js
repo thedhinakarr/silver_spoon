@@ -172,8 +172,11 @@ const IndexPage = () => {
             {/* Desktop menu */}
             <div className="hidden md:flex md:items-center">
               <div className="ml-10 flex items-baseline space-x-8">
-                <a href="#" className="text-gray-800 hover:text-amber-700 px-3 py-2 font-medium transition-colors duration-200 no-underline">
+                <a href="/" className="text-gray-800 hover:text-amber-700 px-3 py-2 font-medium transition-colors duration-200 no-underline">
                   Home
+                </a>
+                <a href="/menu" className="text-gray-800 hover:text-amber-700 px-3 py-2 font-medium transition-colors duration-200 no-underline">
+                  Menu
                 </a>
                 <a href="#about" className="text-gray-800 hover:text-amber-700 px-3 py-2 font-medium transition-colors duration-200 no-underline">
                   About
@@ -214,12 +217,12 @@ const IndexPage = () => {
               Discover a rich tapestry of flavors and spices in the heart of Karlskrona at Silver Spoon.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
-              <a href="#gallery" className="px-8 py-3 bg-amber-600 hover:bg-amber-700 text-white font-semibold rounded-lg shadow-lg transition duration-200 transform hover:-translate-y-1 no-underline">
-                View Gallery
+              <a href="/menu" className="px-8 py-3 bg-amber-600 hover:bg-amber-700 text-white font-semibold rounded-lg shadow-lg transition duration-200 transform hover:-translate-y-1 no-underline">
+                View Menu
               </a>
-              <a href="#features" className="px-8 py-3 bg-transparent border-2 border-white text-white hover:bg-white hover:text-amber-800 font-semibold rounded-lg transition duration-200 no-underline">
-                Explore
-              </a>
+              {/* <a href="#features" className="px-8 py-3 bg-transparent border-2 border-white text-white hover:bg-white hover:text-amber-800 font-semibold rounded-lg transition duration-200 no-underline">
+
+              </a> */}
             </div>
           </div>
         </div>
@@ -302,7 +305,7 @@ const IndexPage = () => {
               </div>
               <div className="mt-8">
                 <a href="#gallery" className="inline-block px-6 py-3 bg-amber-600 hover:bg-amber-700 text-white font-medium rounded-lg shadow transition duration-200 no-underline">
-                  View Gallery
+                  View Menu
                 </a>
               </div>
             </div>
@@ -408,11 +411,12 @@ const IndexPage = () => {
               </div>
             </div>
           </div>
+        </div>
 
-          <div className="border-t border-gray-800 py-8">
-            <div className="container mx-auto px-6">
-              <p className="text-gray-400 text-center">&copy; 2025 Silver Spoon • All rights reserved.</p>
-            </div>
+        {/* Separate bottom footer with centered copyright */}
+        <div className="border-t border-gray-800 py-8">
+          <div className="container mx-auto px-6">
+            <p className="text-gray-400 text-center">&copy; 2025 Silver Spoon • Powered by webitup.co • All rights reserved.</p>
           </div>
         </div>
       </footer>
