@@ -18,7 +18,7 @@ const globalStyles = `
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      logo: file(relativePath: { eq: "logo.jpg" }) {
+      logo: file(relativePath: { eq: "logo.png" }) {
         childImageSharp {
           gatsbyImageData(
             width: 100
@@ -135,14 +135,14 @@ const IndexPage = () => {
           <div className="flex justify-between h-16">
             <div className="flex items-center">
               <a href="#" className="flex items-center space-x-3 no-underline">
-                <div className="h-10 w-10 rounded-full overflow-hidden border-2 border-amber-600">
+                <div className="h-10 w-10 rounded-full  overflow-hidden ">
                   <GatsbyImage
                     image={logoImage}
                     alt="Silver Spoon Logo"
                     className="h-full w-full object-cover"
                   />
                 </div>
-                <span className="text-2xl font-bold text-gray-900 tracking-tight">
+                <span className="text-2xl font-serif text-gray-900 tracking-tight">
                   Silver Spoon
                 </span>
               </a>

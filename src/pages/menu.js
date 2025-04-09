@@ -18,7 +18,7 @@ const globalStyles = `
 const MenuPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      logo: file(relativePath: { eq: "logo.jpg" }) {
+      logo: file(relativePath: { eq: "logo.png" }) {
         childImageSharp {
           gatsbyImageData(
             width: 100
@@ -55,14 +55,14 @@ const MenuPage = () => {
           <div className="flex justify-between h-16">
             <div className="flex items-center">
               <Link to="/" className="flex items-center space-x-3 no-underline">
-                <div className="h-10 w-10 rounded-full overflow-hidden border-2 border-amber-600">
+                <div className="h-10 w-10 rounded-full overflow-hidden">
                   <GatsbyImage
                     image={logoImage}
                     alt="Silver Spoon Logo"
                     className="h-full w-full object-cover"
                   />
                 </div>
-                <span className="text-2xl font-bold text-gray-900 tracking-tight">
+                <span className="text-2xl font-serif text-gray-900 tracking-tight">
                   Silver Spoon
                 </span>
               </Link>
@@ -133,7 +133,10 @@ const MenuPage = () => {
             Our Menu
           </h1>
           <p className="text-xl text-gray-200 max-w-2xl mx-auto">
-            Explore our carefully crafted selection of authentic Indian dishes
+            Explore our carefully crafted selection of authentic Indian dishes.
+          </p>
+          <p className="text-xl text-gray-200 max-w-2xl mx-auto">
+            Call us at +46 455-61 13 01 to place an order!
           </p>
         </div>
       </section>
@@ -141,12 +144,78 @@ const MenuPage = () => {
       {/* Menu Content */}
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="mb-16 text-center">
-            <h2 className="text-sm font-bold tracking-wider text-amber-600 uppercase">Silver Spoon</h2>
-            <h3 className="mt-2 text-4xl font-bold text-gray-900">Authentic Indian Cuisine</h3>
-            <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-              All our dishes are prepared with freshly ground spices and high-quality ingredients to bring you the true flavors of India.
-            </p>
+          {/* SNACKS SECTION */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6 border-b border-amber-200 pb-2">SNACKS</h2>
+            <div className="grid gap-6 md:grid-cols-2">
+              <div className="space-y-6">
+                <div>
+                  <div className="flex justify-between items-center">
+                    <h3 className="text-xl font-semibold"> Papadum</h3>
+                    <p className="font-bold text-amber-600">40 kr</p>
+                  </div>
+                  <p className="text-gray-600 italic">Krisspiga linsbröd med söt mango chutney.</p>
+                </div>
+
+                <div>
+                  <div className="flex justify-between items-center">
+                    <h3 className="text-xl font-semibold">French Fries</h3>
+                    <p className="font-bold text-amber-600">60 kr</p>
+                  </div>
+                  <p className="text-gray-600 italic">Pommes med indisk krydda och tillbehör stark sås.</p>
+                </div>
+
+                <div>
+                  <div className="flex justify-between items-center">
+                    <h3 className="text-xl font-semibold">Samosa</h3>
+                    <p className="font-bold text-amber-600">60 kr</p>
+                  </div>
+                  <p className="text-gray-600 italic">Internationella indisk fyler med potatis och ärter och olika kryddning.</p>
+                </div>
+
+                <div>
+                  <div className="flex justify-between items-center">
+                    <h3 className="text-xl font-semibold">Spring Roll (Veg.)</h3>
+                    <p className="font-bold text-amber-600">60 kr</p>
+                  </div>
+                  <p className="text-gray-600 italic">Vårruller med grönsaker med sweet chilli sås.</p>
+                </div>
+              </div>
+
+              <div className="space-y-6">
+                <div>
+                  <div className="flex justify-between items-center">
+                    <h3 className="text-xl font-semibold">Shish Kebab Sallad</h3>
+                    <p className="font-bold text-amber-600">65 kr</p>
+                  </div>
+                  <p className="text-gray-600 italic">Indisk shish kebab med olika grönsaker med chili bearnaise sås.</p>
+                </div>
+
+                <div>
+                  <div className="flex justify-between items-center">
+                    <h3 className="text-xl font-semibold">Chicken Tikka</h3>
+                    <p className="font-bold text-amber-600">65 kr</p>
+                  </div>
+                  <p className="text-gray-600 italic">Indisk chicken tikka med olika grönsaker och sweet chilli sås</p>
+                </div>
+
+                <div>
+                  <div className="flex justify-between items-center">
+                    <h3 className="text-xl font-semibold">Alloo Tikki</h3>
+                    <p className="font-bold text-amber-600">65 kr</p>
+                  </div>
+                  <p className="text-gray-600 italic">Potatis bullar med salad med sweet chilli och chilli bernaise sås.</p>
+                </div>
+
+                <div>
+                  <div className="flex justify-between items-center">
+                    <h3 className="text-xl font-semibold">Shahi Falafal</h3>
+                    <p className="font-bold text-amber-600">65 kr</p>
+                  </div>
+                  <p className="text-gray-600 italic">Isbergssallad med stekt champinjoner, lök, paprika med chilli bearnaise sås.</p>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* MAIN COURSE CHICKEN */}
@@ -156,18 +225,18 @@ const MenuPage = () => {
               <div className="space-y-6">
                 <div>
                   <div className="flex justify-between items-center">
-                    <h3 className="text-xl font-semibold">Butter Chicken</h3>
+                    <h3 className="text-xl font-semibold">Cream Korma</h3>
                     <p className="font-bold text-amber-600">149 kr</p>
                   </div>
-                  <p className="text-gray-600 italic">Creamy curry sås med grillat cashewmjöl, cashewnötter och indier kryddning med ris och sallad.</p>
+                  <p className="text-gray-600 italic">Gul curry sås med grädde, cashewnötter och indien kryddning. med ris och sallad.</p>
                 </div>
 
                 <div>
                   <div className="flex justify-between items-center">
-                    <h3 className="text-xl font-semibold">Chicken Korma</h3>
+                    <h3 className="text-xl font-semibold">Butter Chicken</h3>
                     <p className="font-bold text-amber-600">149 kr</p>
                   </div>
-                  <p className="text-gray-600 italic">Gul curry sås med grillat kyckling, cashewnötter och indier kryddning med ris och sallad.</p>
+                  <p className="text-gray-600 italic">Orange curry sås med grädde, cashewnötter och indien kryddning med ris och sallad.</p>
                 </div>
 
                 <div>
@@ -175,17 +244,15 @@ const MenuPage = () => {
                     <h3 className="text-xl font-semibold">Chicken Vindaloo</h3>
                     <p className="font-bold text-amber-600">149 kr</p>
                   </div>
-                  <p className="text-gray-600 italic">Röd curry sås med grillat kyckling, cashewmjöl, cashewnötter och indier kryddning med ris och sallad.</p>
+                  <p className="text-gray-600 italic">Röd curry sås med grädde, cashewnötter och indien kryddning med ris och sallad.</p>
                 </div>
-              </div>
 
-              <div className="space-y-6">
                 <div>
                   <div className="flex justify-between items-center">
                     <h3 className="text-xl font-semibold">Kadhai Chicken</h3>
                     <p className="font-bold text-amber-600">149 kr</p>
                   </div>
-                  <p className="text-gray-600 italic">Wok i gjutjärnsgryte med stekt kyckling, paprika, grönsaker och indier kryddning med ris och sallad.</p>
+                  <p className="text-gray-600 italic">Kyckling gryta med stekt lök och paprika, grädde, cashewnötter med ris och sallad.</p>
                 </div>
 
                 <div>
@@ -193,7 +260,41 @@ const MenuPage = () => {
                     <h3 className="text-xl font-semibold">Mughlai Chicken</h3>
                     <p className="font-bold text-amber-600">149 kr</p>
                   </div>
-                  <p className="text-gray-600 italic">Gul curry sås med grillat kyckling, nötter, russin och indier kryddning med ris och sallad.</p>
+                  <p className="text-gray-600 italic">Grön curry sås med grädde, chashewnötter och indien krydning med ris och sallad.</p>
+                </div>
+              </div>
+
+              <div className="space-y-6">
+                <div>
+                  <div className="flex justify-between items-center">
+                    <h3 className="text-xl font-semibold">Masala Chicken</h3>
+                    <p className="font-bold text-amber-600">149 kr</p>
+                  </div>
+                  <p className="text-gray-600 italic">Masala curry med ingefära, vitlök, grädde, cashewnötter och indien kryddning med ris och sallad.</p>
+                </div>
+
+                <div>
+                  <div className="flex justify-between items-center">
+                    <h3 className="text-xl font-semibold">Saag Meat</h3>
+                    <p className="font-bold text-amber-600">149 kr</p>
+                  </div>
+                  <p className="text-gray-600 italic">Spenat sås med grädde, cashewnötter och indien kryddning med ris och sallad.</p>
+                </div>
+
+                <div>
+                  <div className="flex justify-between items-center">
+                    <h3 className="text-xl font-semibold">Tomato Chicken</h3>
+                    <p className="font-bold text-amber-600">149 kr</p>
+                  </div>
+                  <p className="text-gray-600 italic">Tomat sås med färska vitlök, ingefära och grädde, cashewnötter och indien kryddning med ris och sallad.</p>
+                </div>
+
+                <div>
+                  <div className="flex justify-between items-center">
+                    <h3 className="text-xl font-semibold">Mushroom Chicken</h3>
+                    <p className="font-bold text-amber-600">149 kr</p>
+                  </div>
+                  <p className="text-gray-600 italic">Champinjoner sås med stekt lök, paprika, grädde, chaswenötter och indien kryddning med ris och sallad.</p>
                 </div>
 
                 <div>
@@ -201,7 +302,7 @@ const MenuPage = () => {
                     <h3 className="text-xl font-semibold">Egg Curry</h3>
                     <p className="font-bold text-amber-600">149 kr</p>
                   </div>
-                  <p className="text-gray-600 italic">Gul curry sås med ägg, potatis, grönsaker, gröna chilies och indier kryddning med ris och sallad.</p>
+                  <p className="text-gray-600 italic">Gul curry sås med kokt ägg, potatis, grädde, cashewnötter, och indien kryddning med ris och sallad.</p>
                 </div>
               </div>
             </div>
@@ -214,18 +315,18 @@ const MenuPage = () => {
               <div className="space-y-6">
                 <div>
                   <div className="flex justify-between items-center">
-                    <h3 className="text-xl font-semibold">Paneer Butter Masala</h3>
+                    <h3 className="text-xl font-semibold">Shahi Paneer</h3>
                     <p className="font-bold text-amber-600">149 kr</p>
                   </div>
-                  <p className="text-gray-600 italic">Creamy sås med Indisk grillad ost, cashewnötter och indier kryddning med ris och sallad.</p>
+                  <p className="text-gray-600 italic">Gul curry sås med grädde, cashewnötter, färskost och indien kryddning. med ris och sallad.</p>
                 </div>
 
                 <div>
                   <div className="flex justify-between items-center">
-                    <h3 className="text-xl font-semibold">Malai Paneer</h3>
+                    <h3 className="text-xl font-semibold">Palak Paneer</h3>
                     <p className="font-bold text-amber-600">149 kr</p>
                   </div>
-                  <p className="text-gray-600 italic">Gul curry sås med Indisk grillad ost, cashewnötter och indier kryddning med ris och sallad.</p>
+                  <p className="text-gray-600 italic">Spenat sås med grädde, cashewnötter, färskost och indien kryddning med ris och sallad.</p>
                 </div>
 
                 <div>
@@ -233,33 +334,65 @@ const MenuPage = () => {
                     <h3 className="text-xl font-semibold">Kadhai Paneer</h3>
                     <p className="font-bold text-amber-600">149 kr</p>
                   </div>
-                  <p className="text-gray-600 italic">Röd curry sås med tofu, grönsaker, paprika, lök och indier kryddning med ris och sallad.</p>
+                  <p className="text-gray-600 italic">Röd curry sås med stekt lök, paprika, färskost, grädde, cashewnötter och indien kryddning med ris och sallad.</p>
+                </div>
+
+                <div>
+                  <div className="flex justify-between items-center">
+                    <h3 className="text-xl font-semibold">Matar Paneer</h3>
+                    <p className="font-bold text-amber-600">149 kr</p>
+                  </div>
+                  <p className="text-gray-600 italic">Masala curry sås med ärter, färskost, grädde, cashewnötter och indien kryddning med ris och sallad.</p>
+                </div>
+
+                <div>
+                  <div className="flex justify-between items-center">
+                    <h3 className="text-xl font-semibold">Paneer Butter Masala</h3>
+                    <p className="font-bold text-amber-600">149 kr</p>
+                  </div>
+                  <p className="text-gray-600 italic">Orang curry sås med fäskost, grädde, chashewnötter och indien kryddning med ris och sallad.</p>
                 </div>
               </div>
 
               <div className="space-y-6">
                 <div>
                   <div className="flex justify-between items-center">
-                    <h3 className="text-xl font-semibold">Palak Paneer</h3>
-                    <p className="font-bold text-amber-600">149 kr</p>
-                  </div>
-                  <p className="text-gray-600 italic">Grön sås med spenat, cashewmjöl, Indisk grillad ost och indier kryddning med ris och sallad.</p>
-                </div>
-
-                <div>
-                  <div className="flex justify-between items-center">
-                    <h3 className="text-xl font-semibold">Shahi Paneer</h3>
-                    <p className="font-bold text-amber-600">149 kr</p>
-                  </div>
-                  <p className="text-gray-600 italic">Gul curry sås med Indisk grillad ost, cashewnötter och indier kryddning med ris och sallad.</p>
-                </div>
-
-                <div>
-                  <div className="flex justify-between items-center">
                     <h3 className="text-xl font-semibold">Dal Makhani</h3>
                     <p className="font-bold text-amber-600">149 kr</p>
                   </div>
-                  <p className="text-gray-600 italic">Svarta linser med ris, grönsaker, grädde och indier kryddning med ris och sallad.</p>
+                  <p className="text-gray-600 italic">Tomatpure sås med svarta linser, kidneyböner, ingefära, vitlök, grädde, cashewnötter och indien kryddning med ris och sallad.</p>
+                </div>
+
+                <div>
+                  <div className="flex justify-between items-center">
+                    <h3 className="text-xl font-semibold">Chana Masala</h3>
+                    <p className="font-bold text-amber-600">149 kr</p>
+                  </div>
+                  <p className="text-gray-600 italic">Tomatpure sås med kikärtor, ingefära, vitlök, grädde, cashewnötter och indien kryddning med ris och sallad.</p>
+                </div>
+
+                <div>
+                  <div className="flex justify-between items-center">
+                    <h3 className="text-xl font-semibold">Rajma Masala</h3>
+                    <p className="font-bold text-amber-600">149 kr</p>
+                  </div>
+                  <p className="text-gray-600 italic">Tomatpure sås med kidneyböner, vitlök, ingefära, grädde, cashewnötter och indien kryddning med ris och sallad.</p>
+                </div>
+
+                <div>
+                  <div className="flex justify-between items-center">
+                    <h3 className="text-xl font-semibold">Aloo Matar</h3>
+                    <p className="font-bold text-amber-600">149 kr</p>
+                  </div>
+                  <p className="text-gray-600 italic">Masala curry sås med ärter, potatis, grädde, chaswenötter och indien kryddning med ris och sallad.</p>
+                </div>
+
+                <div>
+                  <div className="flex justify-between items-center">
+                    <h3 className="text-xl font-semibold">Mushroom Matar</h3>
+                    <p className="font-bold text-amber-600">149 kr</p>
+                  </div>
+                  <p className="text-gray-600 italic">Röd curry sås med ärter och stekt svamp, lök, grädde, cashewnötter, och indien kryddning med ris och sallad.</p>
                 </div>
               </div>
             </div>
@@ -275,7 +408,7 @@ const MenuPage = () => {
                     <h3 className="text-xl font-semibold">Chana Masala</h3>
                     <p className="font-bold text-amber-600">149 kr</p>
                   </div>
-                  <p className="text-gray-600 italic">Tomatpuré sås med kikärtor, ingefära, vitlök, och indisk kryddning med ris och sallad.</p>
+                  <p className="text-gray-600 italic">Tomatpure sås med kikärtor, ingefära, vitlök, och indien kryddning med ris och sallad.</p>
                 </div>
 
                 <div>
@@ -283,7 +416,7 @@ const MenuPage = () => {
                     <h3 className="text-xl font-semibold">Rajma Masala</h3>
                     <p className="font-bold text-amber-600">149 kr</p>
                   </div>
-                  <p className="text-gray-600 italic">Tomatpuré sås med kidneybönor, vitlök, ingefära och indisk kryddning med ris och sallad.</p>
+                  <p className="text-gray-600 italic">Tomatpure sås med kidneyböner, vitlök, ingefära och indien kryddning med ris och sallad.</p>
                 </div>
 
                 <div>
@@ -291,7 +424,7 @@ const MenuPage = () => {
                     <h3 className="text-xl font-semibold">Mushroom Matar</h3>
                     <p className="font-bold text-amber-600">149 kr</p>
                   </div>
-                  <p className="text-gray-600 italic">Röd curry sås med ärter och stekt svamp, lök och indisk kryddning med ris och sallad.</p>
+                  <p className="text-gray-600 italic">Röd curry sås med ärter och stekt svamp, lök och indien kryddning med ris och sallad.</p>
                 </div>
               </div>
 
@@ -301,7 +434,7 @@ const MenuPage = () => {
                     <h3 className="text-xl font-semibold">Dal Tadka</h3>
                     <p className="font-bold text-amber-600">149 kr</p>
                   </div>
-                  <p className="text-gray-600 italic">Tomatpuré sås med gula linser, kidneybönor, ingefära, vitlök och indisk kryddning med ris och sallad.</p>
+                  <p className="text-gray-600 italic">Tomatpure sås med svarta linser, kidneyböner, ingefära, vitlök och indien kryddning med ris och sallad.</p>
                 </div>
 
                 <div>
@@ -309,7 +442,7 @@ const MenuPage = () => {
                     <h3 className="text-xl font-semibold">Aloo Matar</h3>
                     <p className="font-bold text-amber-600">149 kr</p>
                   </div>
-                  <p className="text-gray-600 italic">Masala curry sås med ärter, potatis och indisk kryddning med ris och sallad.</p>
+                  <p className="text-gray-600 italic">Masala curry sås med ärter, potatis och indien kryddning med ris och sallad.</p>
                 </div>
 
                 <div>
@@ -317,7 +450,7 @@ const MenuPage = () => {
                     <h3 className="text-xl font-semibold">Saag</h3>
                     <p className="font-bold text-amber-600">149 kr</p>
                   </div>
-                  <p className="text-gray-600 italic">Spenat sås med lök, tomat, ingefära, vitlök och indisk kryddning med ris och sallad.</p>
+                  <p className="text-gray-600 italic">Spenat sås med lök, tomat, ingefära, vitlök och indien kryddning med ris och sallad.</p>
                 </div>
               </div>
             </div>
@@ -333,15 +466,15 @@ const MenuPage = () => {
                     <h3 className="text-xl font-semibold">Masala Lamb</h3>
                     <p className="font-bold text-amber-600">189 kr</p>
                   </div>
-                  <p className="text-gray-600 italic">Masala sås, grillad lammfilé, grönsaker, ris, indisk kryddning med ris och sallad.</p>
+                  <p className="text-gray-600 italic">Masala sås, grädde, cashewnötter och indien kryddning med ris och sallad.</p>
                 </div>
 
                 <div>
                   <div className="flex justify-between items-center">
-                    <h3 className="text-xl font-semibold">Saag Gosht (Lamb)</h3>
+                    <h3 className="text-xl font-semibold">Saag Gosh (Lamb)</h3>
                     <p className="font-bold text-amber-600">189 kr</p>
                   </div>
-                  <p className="text-gray-600 italic">Spenat sås med gosht, paprika, cashewnötter och indisk kryddning med ris och sallad.</p>
+                  <p className="text-gray-600 italic">Spenat sås med gosh, grädde, cashewnötter och indien kryddning med ris och sallad.</p>
                 </div>
 
                 <div>
@@ -349,7 +482,15 @@ const MenuPage = () => {
                     <h3 className="text-xl font-semibold">Kadhai Lamb</h3>
                     <p className="font-bold text-amber-600">189 kr</p>
                   </div>
-                  <p className="text-gray-600 italic">Masala curry sås med stekt lök, paprika, grönsaker, cashewnötter och indisk kryddning med ris och sallad.</p>
+                  <p className="text-gray-600 italic">Masala curry sås med stekt lök, paprika, grädde, chaswenötter och indien kryddning med ris och sallad.</p>
+                </div>
+
+                <div>
+                  <div className="flex justify-between items-center">
+                    <h3 className="text-xl font-semibold">Shrimp Curry (Räkor)</h3>
+                    <p className="font-bold text-amber-600">189 kr</p>
+                  </div>
+                  <p className="text-gray-600 italic">Gul curry sås med räkor, grädde, cashwenötter och indien kryddning med ris och sallad.</p>
                 </div>
               </div>
 
@@ -359,7 +500,7 @@ const MenuPage = () => {
                     <h3 className="text-xl font-semibold">Kadhai Shrimp (Räkor)</h3>
                     <p className="font-bold text-amber-600">189 kr</p>
                   </div>
-                  <p className="text-gray-600 italic">Röd curry sås med räkor, grönsaker, gröna cashewnötter med ris och sallad.</p>
+                  <p className="text-gray-600 italic">Räkor gryta med stekt lök och paprika, grädde, cashewnötter med ris och sallad.</p>
                 </div>
 
                 <div>
@@ -367,7 +508,7 @@ const MenuPage = () => {
                     <h3 className="text-xl font-semibold">Chicken Biryani</h3>
                     <p className="font-bold text-amber-600">189 kr</p>
                   </div>
-                  <p className="text-gray-600 italic">Indisk stekt Basmati ris med kyckling, lök, cashewnötter och grönsaker.</p>
+                  <p className="text-gray-600 italic">Indisk stekt Basmati ris med paprika, lök, stekt kyckling och grädde sås.</p>
                 </div>
 
                 <div>
@@ -375,7 +516,7 @@ const MenuPage = () => {
                     <h3 className="text-xl font-semibold">Vegetarian Pulao</h3>
                     <p className="font-bold text-amber-600">189 kr</p>
                   </div>
-                  <p className="text-gray-600 italic">Indisk stekt Basmati ris med olika grönsaker och gröna ärter.</p>
+                  <p className="text-gray-600 italic">Indisk stekt Basmati ris med olika grönsakaer och grädde sås.</p>
                 </div>
               </div>
             </div>
@@ -390,45 +531,63 @@ const MenuPage = () => {
                   <h3 className="text-lg font-semibold">Plain Naan</h3>
                   <p className="font-bold text-amber-600">25 kr</p>
                 </div>
+                <p className="text-gray-600 italic">Vetemjöl, salt, söcker, jäst och matölja.</p>
+
                 <div className="flex justify-between items-center">
                   <h3 className="text-lg font-semibold">Garlic Naan</h3>
-                  <p className="font-bold text-amber-600">35 kr</p>
-                </div>
-                <div className="flex justify-between items-center">
-                  <h3 className="text-lg font-semibold">Butter Naan</h3>
-                  <p className="font-bold text-amber-600">35 kr</p>
-                </div>
-                <div className="flex justify-between items-center">
-                  <h3 className="text-lg font-semibold">Garlic Butter</h3>
-                  <p className="font-bold text-amber-600">45 kr</p>
-                </div>
-                <div className="flex justify-between items-center">
-                  <h3 className="text-lg font-semibold">Indian Papadum</h3>
                   <p className="font-bold text-amber-600">25 kr</p>
                 </div>
+                <p className="text-gray-600 italic">Vetemjöl, salt, söcker, jäst, matölja och färsk vitlök.</p>
+
+                <div className="flex justify-between items-center">
+                  <h3 className="text-lg font-semibold">Plain Roti</h3>
+                  <p className="font-bold text-amber-600">25 kr</p>
+                </div>
+                <p className="text-gray-600 italic">Vetemjöl, salt, söcker, jäst, matölja.</p>
+
+                <div className="flex justify-between items-center">
+                  <h3 className="text-lg font-semibold">Garlic Roti</h3>
+                  <p className="font-bold text-amber-600">25 kr</p>
+                </div>
+                <p className="text-gray-600 italic">Vetemjöl, salt, söcker, jäst, matölja och färsk vitlök.</p>
+
+                <div className="flex justify-between items-center">
+                  <h3 className="text-lg font-semibold">Lacha Parantha</h3>
+                  <p className="font-bold text-amber-600">25 kr</p>
+                </div>
+                <p className="text-gray-600 italic">Vetemjöl, salt, söcker, jäst, matölja.</p>
               </div>
 
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
-                  <h3 className="text-lg font-semibold">Raita</h3>
+                  <h3 className="text-lg font-semibold">Bhatura</h3>
                   <p className="font-bold text-amber-600">25 kr</p>
                 </div>
+                <p className="text-gray-600 italic">Frytera bröd tillbehör vetemjöl, salt, söcker, jäst och matölja.</p>
+
                 <div className="flex justify-between items-center">
-                  <h3 className="text-lg font-semibold">Plain Lassi</h3>
-                  <p className="font-bold text-amber-600">35 kr</p>
+                  <h3 className="text-lg font-semibold">Plain Raita</h3>
+                  <p className="font-bold text-amber-600">20 kr</p>
                 </div>
+                <p className="text-gray-600 italic">Yoghurt</p>
+
                 <div className="flex justify-between items-center">
                   <h3 className="text-lg font-semibold">Vegetable Raita</h3>
                   <p className="font-bold text-amber-600">45 kr</p>
                 </div>
+                <p className="text-gray-600 italic">Yoghurt med tomat, gurka, indien kryddning.</p>
+
                 <div className="flex justify-between items-center">
                   <h3 className="text-lg font-semibold">Fruit Raita</h3>
                   <p className="font-bold text-amber-600">45 kr</p>
                 </div>
+                <p className="text-gray-600 italic">Söt yoghurt med olika frukter.</p>
+
                 <div className="flex justify-between items-center">
-                  <h3 className="text-lg font-semibold">Pickles</h3>
-                  <p className="font-bold text-amber-600">25 kr</p>
+                  <h3 className="text-lg font-semibold">Pickle</h3>
+                  <p className="font-bold text-amber-600">20 kr</p>
                 </div>
+                <p className="text-gray-600 italic">Mixed eller mango pickle</p>
               </div>
             </div>
           </div>
@@ -501,7 +660,7 @@ const MenuPage = () => {
                     <p className="font-semibold text-amber-600">25 kr</p>
                   </div>
                   <div className="flex justify-between items-center">
-                    <p>Fanta (olika smak)</p>
+                    <p>Festis (olika smak)</p>
                     <p className="font-semibold text-amber-600">25 kr</p>
                   </div>
                 </div>
