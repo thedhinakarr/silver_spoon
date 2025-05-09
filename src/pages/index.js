@@ -383,7 +383,7 @@ const IndexPage = () => {
               <h4 className="text-lg font-semibold text-white mb-4">Visit Us</h4>
               <address className="not-italic text-gray-400">
                 <p>Parkgatan 1, 371 14 Karlskrona</p>
-                <p className="mt-3">info@silverspoon.com</p>
+                <p className="mt-3">silverspoon774@gmail.com</p>
                 <p>+46 455-61 13 01</p>
               </address>
             </div>
@@ -391,9 +391,9 @@ const IndexPage = () => {
             <div>
               <h4 className="text-lg font-semibold text-white mb-4">Hours</h4>
               <ul className="text-gray-400 space-y-2">
-                <li>Monday - Friday: 11:00 - 20:00</li>
-                <li>Saturday: 10:00 - 20:00</li>
-                <li>Sunday: 10:00 - 20:00</li>
+                <li>Monday - Thursday: 11:00 - 21:00</li>
+                <li>Friday: 11:00 - 22:00</li>
+                <li>Saturday: 12:00 - 22:00</li> 
               </ul>
               <div className="mt-6 flex space-x-4">
                 <a href="#" className="text-gray-400 hover:text-amber-500 no-underline">

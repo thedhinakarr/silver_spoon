@@ -91,6 +91,79 @@ const globalStyles = `
     "64. Rollo Oscar - Tomatsås, Ost, Skinka, Räkor, Ananas, Champinjoner (färska)"
   ];
 
+    // Langos
+  const langos = [
+    "1. Langos med kebab - Kebabkött (nötköt), Ost, Gräddfil, Lök, Oliver, Tomater (färska), Isbergssallad, Feferoni",
+    "2. Langos med gyroskött - Gyroskött (fläskkarre), Ost, Gräddfil, Lök, Oliver, Tomater (färska), Isbergssallad, Feferoni",
+    "3. Langos med kyckling - Kyckling, Ost, Gräddfil, Lök, Oliver, Tomater (färska), Isbergssallad, Feferoni",
+    "4. Langos med tonfisk - Tonfisk, Ost, Gräddfil, Lök, Oliver, Tomater (färska), Isbergssallad, Feferoni",
+    "5. Langos med räkor - Räkor, Ost, Gräddfil, Lök, Oliver, Tomater (färska), Isbergssallad, Feferoni"
+  ];
+
+  // Sallads
+  const sallader = [
+    "1. Kebabsallad - Kebabkött (nötköt), Fetaost, Kebabsås mild, Lök, Oliver, Tomater (färska), Isbergssallad, Feferoni, Gurka",
+    "2. Kyckingsallad - Kyckling, Fetaost, Kebabsås mild, Lök, Oliver, Tomater (färska), Isbergssallad, Feferoni, Gurka",
+    "3. Falafelsallad - Falafel, Fetaost, Kebabsås mild, Lök, Oliver, Tomater (färska), Isbergssallad, Feferoni, Gurka",
+    "4. Tonfisksallad - Tonfisk, Fetaost, Kebabsås mild, Lök, Oliver, Tomater (färska), Isbergssallad, Feferoni, Gurka",
+    "5. Räksallad - Räkor, Fetaost, Kebabsås mild, Lök, Oliver, Tomater (färska), Isbergssallad, Feferoni, Gurka",
+    "6. Hawaiisallad - Skinka, Fetaost, Ananas, Kebabsås mild, Lök, Oliver, Tomater (färska), Isbergssallad, Feferoni, Gurka",
+    "7. Vegetarisk sallad - Fetaost, Champinjoner (färska), Kebabsås mild, Lök, Oliver, Tomater (färska), Isbergssallad, Feferoni, Gurka, Paprika (färsk)",
+    "8. Gyrossallad - Gyroskött (fläskkarre), Fetaost, Kebabsås mild, Lök, Oliver, Tomater (färska), Isbergssallad, Feferoni, Gurka"
+  ];
+
+  // Falafel dishes
+  const falafel = [
+    "23. Falafel med bröd - Falafel, Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni",
+    "24. Falafel med bröd special - Falafel, Ost, Champinjoner (färska), Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni",
+    "25. Falafelrulle - Falafel, Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni",
+    "26. Falafelrulle special - Falafel, Ost, Champinjoner (färska), Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni",
+    "27. Falafeltallrik med pommes - Falafel, Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni",
+    "28. Falafeltallrik special med pommes - Falafel, Ost, Champinjoner (färska), Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni"
+  ];
+
+  // Hamburgers
+  const hamburgare = [
+    "1. Hamburgare 90g - Hamburgerdressing, Tomater (färska), Isbergssallad, Rödlök",
+    "2. Hamburgertallrik 90g - Pommes frites, Hamburgerdressing, Tomater (färska), Isbergssallad, Rödlök",
+    "3. Hamburgare 150g - Hamburgerdressing, Tomater (färska), Isbergssallad, Rödlök",
+    "4. Hamburgertallrik 150g - Pommes frites, Hamburgerdressing, Tomater (färska), Isbergssallad, Rödlök"
+  ];
+
+  // Kebab plates
+  const kebabTallrik = [
+    "1. Kebab med bröd - Kebabkött (nötköt), Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni",
+    "2. Kebab med bröd special - Kebabkött (nötköt), Ost, Champinjoner (färska), Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni",
+    "3. Kebabrulle - Kebabkött (nötköt), Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni",
+    "4. Kebabrulle special - Kebabkött (nötköt), Ost, Champinjoner (färska), Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni",
+    "5. Kebabtallrik med pommes - Kebabkött (nötköt), Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni",
+    "6. Kebabtallrik special med pommes - Kebabkött (nötköt), Ost, Champinjoner (färska), Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni",
+    "7. Kebabtallrik med ris - Kebabkött (nötköt), Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni",
+    "8. Kebabtallrik special med ris - Kebabkött (nötköt), Ost, Champinjoner (färska), Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni"
+  ];
+
+  // Gyros dishes
+  const gyros = [
+    "9. Gyros med bröd - Gyroskött (fläskkarre), Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni",
+    "10. Gyros med bröd special - Gyroskött (fläskkarre), Ost, Champinjoner (färska), Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni",
+    "11. Gyrosrulle - Gyroskött (fläskkarre), Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni",
+    "12. Gyrosrulle special - Gyroskött (fläskkarre), Ost, Champinjoner (färska), Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni",
+    "13. Gyrostallrik med pommes - Gyroskött (fläskkarre), Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni",
+    "14. Gyrostallrik special med pommes - Gyroskött (fläskkarre), Ost, Champinjoner (färska), Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni"
+  ];
+
+  // Chicken dishes
+  const kyckling = [
+    "15. Kyckling med bröd - Kyckling, Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni",
+    "16. Kyckling med bröd special - Kyckling, Ost, Champinjoner (färska), Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni",
+    "17. Kycklingrulle - Kyckling, Ost, Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni",
+    "18. Kycklingrulle special - Kyckling, Ost, Champinjoner (färska), Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni",
+    "19. Kycklingtallrik med pommes - Kyckling, Ost, Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni",
+    "20. Kycklingtallrik special med pommes - Kyckling, Ost, Champinjoner (färska), Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni",
+    "21. Kycklingtallrik med ris - Kyckling, Ost, Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni",
+    "22. Kycklingtallrik special med ris - Kyckling, Ost, Champinjoner (färska), Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni"
+  ];
+
 const MenuPage = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -776,6 +849,239 @@ const MenuPage = () => {
     </div>
   </div>
 </div>
+
+{/* LANGOS SECTION */}
+<div className="mb-16">
+  <h2 className="text-3xl font-bold text-gray-900 mb-6 border-b border-amber-200 pb-2">LANGOS</h2>
+  <div className="grid gap-6 md:grid-cols-2">
+    <div className="space-y-6">
+      {langos.slice(0, Math.ceil(langos.length / 2)).map((item, index) => {
+        const [name, ingredients] = item.split(' - ');
+        return (
+          <div key={index}>
+            <div className="flex justify-between items-center">
+              <h3 className="text-xl font-semibold">{name}</h3>
+              <p className="font-bold text-amber-600">135 kr</p>
+            </div>
+            <p className="text-gray-600 italic">{ingredients}</p>
+          </div>
+        );
+      })}
+    </div>
+    <div className="space-y-6">
+      {langos.slice(Math.ceil(langos.length / 2)).map((item, index) => {
+        const [name, ingredients] = item.split(' - ');
+        return (
+          <div key={index + Math.ceil(langos.length / 2)}>
+            <div className="flex justify-between items-center">
+              <h3 className="text-xl font-semibold">{name}</h3>
+              <p className="font-bold text-amber-600">135 kr</p>
+            </div>
+            <p className="text-gray-600 italic">{ingredients}</p>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</div>
+
+{/* SALLADER SECTION */}
+<div className="mb-16">
+  <h2 className="text-3xl font-bold text-gray-900 mb-6 border-b border-amber-200 pb-2">SALLADER</h2>
+  <div className="grid gap-6 md:grid-cols-2">
+    <div className="space-y-6">
+      {sallader.slice(0, Math.ceil(sallader.length / 2)).map((item, index) => {
+        const [name, ingredients] = item.split(' - ');
+        return (
+          <div key={index}>
+            <div className="flex justify-between items-center">
+              <h3 className="text-xl font-semibold">{name}</h3>
+              <p className="font-bold text-amber-600">120 kr</p>
+            </div>
+            <p className="text-gray-600 italic">{ingredients}</p>
+          </div>
+        );
+      })}
+    </div>
+    <div className="space-y-6">
+      {sallader.slice(Math.ceil(sallader.length / 2)).map((item, index) => {
+        const [name, ingredients] = item.split(' - ');
+        return (
+          <div key={index + Math.ceil(sallader.length / 2)}>
+            <div className="flex justify-between items-center">
+              <h3 className="text-xl font-semibold">{name}</h3>
+              <p className="font-bold text-amber-600">120 kr</p>
+            </div>
+            <p className="text-gray-600 italic">{ingredients}</p>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</div>
+
+{/* KEBAB SECTION */}
+<div className="mb-16">
+  <h2 className="text-3xl font-bold text-gray-900 mb-6 border-b border-amber-200 pb-2">KEBAB</h2>
+  <div className="grid gap-6 md:grid-cols-2">
+    <div className="space-y-6">
+      {kebabTallrik.slice(0, Math.ceil(kebabTallrik.length / 2)).map((item, index) => {
+        const [name, ingredients] = item.split(' - ');
+        return (
+          <div key={index}>
+            <div className="flex justify-between items-center">
+              <h3 className="text-xl font-semibold">{name}</h3>
+              <p className="font-bold text-amber-600">{index < 3 ? '135' : '135'} kr</p>
+            </div>
+            <p className="text-gray-600 italic">{ingredients}</p>
+          </div>
+        );
+      })}
+    </div>
+    <div className="space-y-6">
+      {kebabTallrik.slice(Math.ceil(kebabTallrik.length / 2)).map((item, index) => {
+        const [name, ingredients] = item.split(' - ');
+        return (
+          <div key={index + Math.ceil(kebabTallrik.length / 2)}>
+            <div className="flex justify-between items-center">
+              <h3 className="text-xl font-semibold">{name}</h3>
+              <p className="font-bold text-amber-600">135 kr</p>
+            </div>
+            <p className="text-gray-600 italic">{ingredients}</p>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</div>
+
+{/* GYROS SECTION */}
+<div className="mb-16">
+  <h2 className="text-3xl font-bold text-gray-900 mb-6 border-b border-amber-200 pb-2">GYROS</h2>
+  <div className="grid gap-6 md:grid-cols-2">
+    <div className="space-y-6">
+      {gyros.slice(0, Math.ceil(gyros.length / 2)).map((item, index) => {
+        const [name, ingredients] = item.split(' - ');
+        return (
+          <div key={index}>
+            <div className="flex justify-between items-center">
+              <h3 className="text-xl font-semibold">{name}</h3>
+              <p className="font-bold text-amber-600">{index < 3 ? '135' : '135'} kr</p>
+            </div>
+            <p className="text-gray-600 italic">{ingredients}</p>
+          </div>
+        );
+      })}
+    </div>
+    <div className="space-y-6">
+      {gyros.slice(Math.ceil(gyros.length / 2)).map((item, index) => {
+        const [name, ingredients] = item.split(' - ');
+        return (
+          <div key={index + Math.ceil(gyros.length / 2)}>
+            <div className="flex justify-between items-center">
+              <h3 className="text-xl font-semibold">{name}</h3>
+              <p className="font-bold text-amber-600">135 kr</p>
+            </div>
+            <p className="text-gray-600 italic">{ingredients}</p>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</div>
+
+{/* KYCKLING SECTION */}
+<div className="mb-16">
+  <h2 className="text-3xl font-bold text-gray-900 mb-6 border-b border-amber-200 pb-2">KYCKLING</h2>
+  <div className="grid gap-6 md:grid-cols-2">
+    <div className="space-y-6">
+      {kyckling.slice(0, Math.ceil(kyckling.length / 2)).map((item, index) => {
+        const [name, ingredients] = item.split(' - ');
+        return (
+          <div key={index}>
+            <div className="flex justify-between items-center">
+              <h3 className="text-xl font-semibold">{name}</h3>
+              <p className="font-bold text-amber-600">{index < 3 ? '135' : '135'} kr</p>
+            </div>
+            <p className="text-gray-600 italic">{ingredients}</p>
+          </div>
+        );
+      })}
+    </div>
+    <div className="space-y-6">
+      {kyckling.slice(Math.ceil(kyckling.length / 2)).map((item, index) => {
+        const [name, ingredients] = item.split(' - ');
+        return (
+          <div key={index + Math.ceil(kyckling.length / 2)}>
+            <div className="flex justify-between items-center">
+              <h3 className="text-xl font-semibold">{name}</h3>
+              <p className="font-bold text-amber-600">135 kr</p>
+            </div>
+            <p className="text-gray-600 italic">{ingredients}</p>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</div>
+
+{/* FALAFEL SECTION */}
+<div className="mb-16">
+  <h2 className="text-3xl font-bold text-gray-900 mb-6 border-b border-amber-200 pb-2">FALAFEL</h2>
+  <div className="grid gap-6 md:grid-cols-2">
+    <div className="space-y-6">
+      {falafel.slice(0, Math.ceil(falafel.length / 2)).map((item, index) => {
+        const [name, ingredients] = item.split(' - ');
+        return (
+          <div key={index}>
+            <div className="flex justify-between items-center">
+              <h3 className="text-xl font-semibold">{name}</h3>
+              <p className="font-bold text-amber-600">{index < 3 ? '120' : '120'} kr</p>
+            </div>
+            <p className="text-gray-600 italic">{ingredients}</p>
+          </div>
+        );
+      })}
+    </div>
+    <div className="space-y-6">
+      {falafel.slice(Math.ceil(falafel.length / 2)).map((item, index) => {
+        const [name, ingredients] = item.split(' - ');
+        return (
+          <div key={index + Math.ceil(falafel.length / 2)}>
+            <div className="flex justify-between items-center">
+              <h3 className="text-xl font-semibold">{name}</h3>
+              <p className="font-bold text-amber-600">120 kr</p>
+            </div>
+            <p className="text-gray-600 italic">{ingredients}</p>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</div>
+
+{/* HAMBURGARE SECTION */}
+<div className="mb-16">
+  <h2 className="text-3xl font-bold text-gray-900 mb-6 border-b border-amber-200 pb-2">HAMBURGARE</h2>
+  <div className="grid gap-6 md:grid-cols-2">
+    <div className="space-y-6">
+      {hamburgare.map((item, index) => {
+        const [name, ingredients] = item.split(' - ');
+        return (
+          <div key={index}>
+            <div className="flex justify-between items-center">
+              <h3 className="text-xl font-semibold">{name}</h3>
+              <p className="font-bold text-amber-600">
+                {index === 0 ? '90' : index === 1 ? '105' : index === 2 ? '110' : '120'} kr
+              </p>
+            </div>
+            <p className="text-gray-600 italic">{ingredients}</p>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</div>
           
 
           {/* DESSERTS */}
@@ -971,7 +1277,7 @@ const MenuPage = () => {
               <h4 className="text-lg font-semibold text-white mb-4">Visit Us</h4>
               <address className="not-italic text-gray-400">
                 <p>Parkgatan 1, 371 14 Karlskrona</p>
-                <p className="mt-3">info@silverspoon.com</p>
+                <p className="mt-3">silverspoon774@gmail.com</p>
                 <p>+46 455-61 13 01</p>
               </address>
             </div>
@@ -979,9 +1285,9 @@ const MenuPage = () => {
             <div>
               <h4 className="text-lg font-semibold text-white mb-4">Hours</h4>
               <ul className="text-gray-400 space-y-2">
-                <li>Monday - Friday: 11:00 - 20:00</li>
-                <li>Saturday: 10:00 - 20:00</li>
-                <li>Sunday: 10:00 - 20:00</li>
+                <li>Monday - Thursday: 11:00 - 21:00</li>
+                <li>Friday: 11:00 - 22:00</li>
+                <li>Saturday: 12:00 - 22:00</li>
               </ul>
               <div className="mt-6 flex space-x-4">
                 <a href="#" className="text-gray-400 hover:text-amber-500 no-underline">
