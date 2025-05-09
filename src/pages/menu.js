@@ -15,6 +15,82 @@ const globalStyles = `
   }
 `;
 
+  // Pizza Klass 1
+  const klass1 = [
+    "1. Margherita - Tomatsås, Ost",
+    "2. Funghi - Tomatsås, Ost, Champinjoner (färska)",
+    "3. Vesuvio - Tomatsås, Ost, Skinka",
+    "4. Calzone (inbakad) - Tomatsås, Ost, Skinka",
+    "5. La gondola - Tomatsås, Ost, Skinka, Champinjoner (färska)",
+    "6. Capricciosa - Tomatsås, Ost, Skinka, Räkor",
+    "7. Hawaii special - Tomatsås, Ost, Skinka, Ananas",
+    "8. Marinara - Tomatsås, Ost, Räkor, Musslor",
+    "9. Pescatore - Tomatsås, Ost, Tonfisk, Lök",
+    "10. Bolognese - Tomatsås, Ost, Köttfärssås",
+    "11. La mafia - Tomatsås, Ost, Bacon, Lök, Paprika (färsk)",
+    "12. Vegetariana - Tomatsås, Ost, Champinjoner (färska), Lök, Oliver, Paprika (färsk)"
+  ];
+
+  // Pizza Klass 2
+  const klass2 = [
+    "13. Mama mia - Tomatsås, Ost, Skinka, Räkor, Champinjoner (färska)",
+    "14. Tropicana - Tomatsås, Ost, Skinka, Ananas, Banan",
+    "15. Gudadera - Tomatsås, Ost, Tonfisk, Musslor, Paprika (färsk)",
+    "16. Bambino (inbakad) - Tomatsås, Ost, Köttfärssås, Ananas",
+    "17. Quattro stagioni - Tomatsås, Ost, Skinka, Räkor, Champinjoner (färska), Musslor",
+    "18. Calzone super (inbakad) - Tomatsås, Ost, Skinka, Räkor, Champinjoner (färska)",
+    "19. Paradiso - Tomatsås, Ost, Skinka, Räkor, Ananas, Champinjoner (färska)",
+    "20. Maraddona - Tomatsås, Ost, Skinka, Salami, Champinjoner (färska)",
+    "21. Calzone bolognese (inbakad) - Tomatsås, Ost, Köttfärssås, Lök",
+    "22. Chapman - Tomatsås, Ost, Salami, Köttfärssås, Bacon",
+    "23. Bambino super - Tomatsås, Ost, Köttfärssås, Räkor, Ananas, Lök, Vitlök",
+    "24. Rimini - Tomatsås, Ost, Bacon, Lök, Ägg",
+    "25. Hawaii special - Tomatsås, Ost, Skinka, Räkor, Ananas",
+    "26. Ronaldo - Tomatsås, Ost, Oxfilé, Bearnaisesås",
+    "27. Big Brother - Tomatsås, Ost, Oxfilé, Bearnaisesås, Lök, Tomater (färska), Jalapeño",
+    "28. Roma - Tomatsås, Ost, Skinka, Fetaost, Bearnaisesås, Kebabkött (nötköt)",
+    "29. Ciao Ciao - Tomatsås, Ost, Oxfilé (marinerad), Champinjoner (färska), Tomater (färska), Vitlök",
+    "30. Festpizza - Tomatsås, Ost, Oxfilé (marinerad), Champinjoner (färska), Bearnaisesås",
+    "31. Trossö special - Tomatsås, Ost, Salami, Oxfilé (marinerad), Champinjoner (färska), Lök, Tomater (färska)",
+    "32. Fiskarepizza - Tomatsås, Ost, Tonfisk, Räkor, Musslor",
+    "33. Grönsakspizza - Tomatsås, Ost, Oxfilé (marinerad), Champinjoner (färska), Tomater (färska), Grönsaksbland",
+    "34. Mexicana - Tomatsås, Ost, Köttfärs, Bacon, Lök, Paprika (färsk)",
+    "35. Lambada - Tomatsås, Ost, Skinka, Oxfilé, Köttfärs, Bacon, Champinjoner (färska), Bearnaisesås",
+    "36. Valentino special - Tomatsås, Ost, Oxfilé, Champinjoner (färska), Bearnaisesås, Lök",
+    "37. Karlskrona special - Tomatsås, Ost, Bacon, Oxfilé (marinerad), Lök, Paprika (färsk)",
+    "38. Hercules - Tomatsås, Ost, Oxfilé, Bearnaisesås, Curry, Banan",
+    "39. Kycklingpizza - Tomatsås, Ost, Kyckling, Kebabsås mild, Lök, Tomater (färska), Isbergssallad",
+    "40. Kebabpizza - Tomatsås, Ost, Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni, Kebabkött (nötköt)",
+    "41. Venezia - Tomatsås, Ost, Skinka, Kebabsås mild, Kebabkött (nötköt)",
+    "42. Gyrospizza special - Tomatsås, Ost, Kebabsås mild, Lök, Tomater (färska), Isbergssallad, Feferoni, Gyroskött (fläskkarre)",
+    "43. Halva halva - Tomatsås, Ost, Kebabsås mild, Gyroskött (fläskkarre), Kebabkött (nötköt)",
+    "44. Red Devil - Tomatsås, Ost, Salami, Oxfilé, Bearnaisesås, Jalapeño, Feferoni",
+    "45. Bonjour - Tomatsås, Ost, Oxfilé, Champinjoner (färska), Bearnaisesås, Lök, Paprika (färsk)",
+    "46. Palermo - Tomatsås, Ost, Skinka, Oxfilé, Champinjoner (färska), Bearnaisesås",
+    "47. Calzone special (inbakad) - Tomatsås, Ost, Skinka, Kebabsås mild, Kebabkött (nötköt)",
+    "48. Bagarens favorit - Tomatsås, Ost, Oxfilé, Champinjoner (färska), Lök, Vitlök",
+    "49. Mazziani - Tomatsås, Ost, Oxfilé (marinerad), Tomater (färska), Vitlök",
+    "50. Vikingbåt (Halvinbakad) - Tomatsås, Ost, Champinjoner (färska), Lök, Vitlök, Gyroskött (fläskkarre)",
+    "51. Ciao bella (Halvinbakad) - Tomatsås, Ost, Oxfilé, Champinjoner (färska), Lök, Vitlök",
+    "52. Indiana - Tomatsås, Ost, Oxfilé (marinerad), Curry, Banan, Tomater (färska)",
+    "53. Bahamas - Tomatsås, Ost, Kyckling, Curry, Banan, Jordnötter",
+    "54. Black and White - Tomatsås, Ost, Oxfilé (marinerad), Champinjoner (färska), Bearnaisesås",
+    "55. Sopsäck - Tomatsås, Ost, Skinka, Räkor, Champinjoner (färska), Vitlök",
+    "56. Mozzarella - Tomatsås, Ost, Pepperoni, Champinjoner (färsk), Bearnaisesås, Mozzarellaost",
+    "57. Fur - Tomatsås, Ost, Champinjoner (färska), Lök, Tomater (färska), Vitlök",
+    "58. Pommes - Tomatsås, Ost, Kebabsås mild, Kebabkött (nötköt), Pommes frites",
+    "59. Osttpizza - Tomatsås, Ost, Fetaost, Vitlök, Gorgonzaolost, Mozzarellaost"
+  ];
+
+  // Rollopizza
+  const rollopizza = [
+    "60. Rollo mardino - Tomatsås, Ost, Oxfilé, Champinjoner (färska), Bearnaisesås, Lök",
+    "61. Rollo kebab - Tomatsås, Ost, Kebabsås mild, Champinjoner (färska), Kebabkött (nötköt)",
+    "62. Rollo Chapman - Tomatsås, Ost, Köttfärs, Lök, Tomater (färska), Isbergssallad, Kebabkött (nötköt)",
+    "63. Rollo Alanya - Tomatsås, Ost, Kyckling, Oxfilé, Champinjoner (färska), Lök",
+    "64. Rollo Oscar - Tomatsås, Ost, Skinka, Räkor, Ananas, Champinjoner (färska)"
+  ];
+
 const MenuPage = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -143,7 +219,10 @@ const MenuPage = () => {
 
       {/* Menu Content */}
       <section className="py-16 bg-white">
+
+        
         <div className="max-w-5xl mx-auto px-6">
+
           {/* SNACKS SECTION */}
           <div className="mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-6 border-b border-amber-200 pb-2">SNACKS</h2>
@@ -591,6 +670,113 @@ const MenuPage = () => {
               </div>
             </div>
           </div>
+
+          {/*Pizzas*/}
+          {/* PIZZA SECTION - KLASS 1 */}
+<div className="mb-16">
+  <h2 className="text-3xl font-bold text-gray-900 mb-6 border-b border-amber-200 pb-2">PIZZA - KLASS 1</h2>
+  <div className="grid gap-6 md:grid-cols-2">
+    <div className="space-y-6">
+      {klass1.slice(0, Math.ceil(klass1.length / 2)).map((pizza, index) => {
+        const [name, ingredients] = pizza.split(' - ');
+        return (
+          <div key={index}>
+            <div className="flex justify-between items-center">
+              <h3 className="text-xl font-semibold">{name}</h3>
+              <p className="font-bold text-amber-600">120 kr</p>
+            </div>
+            <p className="text-gray-600 italic">{ingredients}</p>
+          </div>
+        );
+      })}
+    </div>
+    <div className="space-y-6">
+      {klass1.slice(Math.ceil(klass1.length / 2)).map((pizza, index) => {
+        const [name, ingredients] = pizza.split(' - ');
+        return (
+          <div key={index + Math.ceil(klass1.length / 2)}>
+            <div className="flex justify-between items-center">
+              <h3 className="text-xl font-semibold">{name}</h3>
+              <p className="font-bold text-amber-600">120 kr</p>
+            </div>
+            <p className="text-gray-600 italic">{ingredients}</p>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</div>
+
+{/* PIZZA SECTION - KLASS 2 */}
+<div className="mb-16">
+  <h2 className="text-3xl font-bold text-gray-900 mb-6 border-b border-amber-200 pb-2">PIZZA - KLASS 2</h2>
+  <div className="grid gap-6 md:grid-cols-2">
+    <div className="space-y-6">
+      {klass2.slice(0, Math.ceil(klass2.length / 2)).map((pizza, index) => {
+        const [name, ingredients] = pizza.split(' - ');
+        return (
+          <div key={index}>
+            <div className="flex justify-between items-center">
+              <h3 className="text-xl font-semibold">{name}</h3>
+              <p className="font-bold text-amber-600">149 kr</p>
+            </div>
+            <p className="text-gray-600 italic">{ingredients}</p>
+          </div>
+        );
+      })}
+    </div>
+    <div className="space-y-6">
+      {klass2.slice(Math.ceil(klass2.length / 2)).map((pizza, index) => {
+        const [name, ingredients] = pizza.split(' - ');
+        return (
+          <div key={index + Math.ceil(klass2.length / 2)}>
+            <div className="flex justify-between items-center">
+              <h3 className="text-xl font-semibold">{name}</h3>
+              <p className="font-bold text-amber-600">149 kr</p>
+            </div>
+            <p className="text-gray-600 italic">{ingredients}</p>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</div>
+
+{/* ROLLO PIZZA SECTION */}
+<div className="mb-16">
+  <h2 className="text-3xl font-bold text-gray-900 mb-6 border-b border-amber-200 pb-2">ROLLO PIZZA</h2>
+  <div className="grid gap-6 md:grid-cols-2">
+    <div className="space-y-6">
+      {rollopizza.slice(0, Math.ceil(rollopizza.length / 2)).map((pizza, index) => {
+        const [name, ingredients] = pizza.split(' - ');
+        return (
+          <div key={index}>
+            <div className="flex justify-between items-center">
+              <h3 className="text-xl font-semibold">{name}</h3>
+              <p className="font-bold text-amber-600">160 kr</p>
+            </div>
+            <p className="text-gray-600 italic">{ingredients}</p>
+          </div>
+        );
+      })}
+    </div>
+    <div className="space-y-6">
+      {rollopizza.slice(Math.ceil(rollopizza.length / 2)).map((pizza, index) => {
+        const [name, ingredients] = pizza.split(' - ');
+        return (
+          <div key={index + Math.ceil(rollopizza.length / 2)}>
+            <div className="flex justify-between items-center">
+              <h3 className="text-xl font-semibold">{name}</h3>
+              <p className="font-bold text-amber-600">160 kr</p>
+            </div>
+            <p className="text-gray-600 italic">{ingredients}</p>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</div>
+          
 
           {/* DESSERTS */}
           <div className="mb-16">
