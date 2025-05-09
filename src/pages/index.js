@@ -383,7 +383,7 @@ const IndexPage = () => {
               <h4 className="text-lg font-semibold text-white mb-4">Visit Us</h4>
               <address className="not-italic text-gray-400">
                 <p>Parkgatan 1, 371 14 Karlskrona</p>
-                <p className="mt-3">silverspoon774@gmail.com</p>
+                <p className="mt-3">silverspoons774@gmail.com</p>
                 <p>+46 455-61 13 01</p>
               </address>
             </div>
